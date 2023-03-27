@@ -21,7 +21,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 include_directories (include)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src CROSLIB_SRCS)
 
-add_library(cros STATIC ${CROSLIB_SRCS} )
+add_library(cros SHARED ${CROSLIB_SRCS} )
 
 add_subdirectory(samples)
 
